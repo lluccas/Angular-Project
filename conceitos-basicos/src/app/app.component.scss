@@ -1,0 +1,61 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(0, 255, 0, 0.15) 1px,
+      transparent 3px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0,255,0,0.15) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+
+  background-color: black;
+
+  animation: moveMatrix 2s linear infinite;
+
+  z-index: -1;
+}
+
+@keyframes moveMatrix {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0 40px;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: #00ff00;
+  padding: 40px;
+  font-family: monospace;
+}
+body{
+   
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/lista-de-compras.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
